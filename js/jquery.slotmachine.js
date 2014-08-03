@@ -588,7 +588,7 @@ $(window).load(function(){
 	var WIN = false;
 	var CURRENT_WIN = 0;
 	var PROBABILITY = 0.05;
-	var totalMachines = 3;
+	var totalMachines = 5;
 	var totalFruits = 7;
 	
 	var TIMES = 0;
@@ -618,7 +618,7 @@ $(window).load(function(){
 		console.info(TIMES, TOTALWINS);
 
 		machines[0].shuffle(5, onComplete);
-		for(var i = 1, j = 500; i < totalMachines; i++, j*=2){
+		for(var i = 1, j = 100; i < totalMachines; i++, j*=2){
 			postpone(machines[i], j);
 		}
 
